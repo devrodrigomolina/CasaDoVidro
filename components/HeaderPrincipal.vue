@@ -71,13 +71,19 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid red;
 }
+
 a {
   color: #0b0e11;
   font-family: 'Montserrat';
   font-size: 1.1rem;
+  transition: ease .3s;
+ 
 }
-a:hover {
-  color: #309ac7;
+a:hover{
+   background-color: #309ac7;
+  color: #ffffff;
+  padding: 24px 10px;
 }
 </style>
