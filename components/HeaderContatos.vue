@@ -4,12 +4,11 @@
       <div class="infos-contatos">
   
         <p class="contatos-infos" >
-         
-          <fa class="icones" icon="phone-flip" /> (44) 99999-9999
+          <fa class="icones" icon="phone-flip" /> <a href="">(44) 3253-9999</a>
         </p>
        
         <p class="contatos-infos">
-          <i class="icones fa-brands fa-whatsapp"></i> (44) 3253-9999
+          <fa class="icones" :icon="['fab', 'whatsapp']" /> <a href="">(44) 99999-9999</a>
         </p>
         <p class="contatos-infos">
           <fa class="icones" icon="clock" /> Seg - Sex: 8:00 - 18:00
@@ -31,15 +30,14 @@ export default {
 <style scoped>
 .container-header {
   width: 100vw;
-  height: 60px;
+  height: 50px;
   background: rgb(26, 30, 36);
 }
 .icones {
-  color: #2f9ac6;
-  cursor: pointer;
+  color: #309ac7;
 }
 .header-contatos {
-  width: 1400px;
+  width: 1200px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -51,7 +49,7 @@ export default {
   display: flex;
   justify-content: space-around;
 }
-.contatos-infos {
+.contatos-infos, .contatos-infos a{
   font-weight: 600;
   color: white;
 }
@@ -61,12 +59,16 @@ export default {
 .btn {
   width: 400px;
   height: 100%;
-  background: #2f9ac6;
+  background: #309ac7;
   font-weight: 800;
   border: none;
   cursor: pointer;
   border-radius: 4px;
   color: white;
   text-transform: uppercase;
+  transition: all .5s;
+}
+.btn:hover {
+  background: #186383;
 }
 </style>
