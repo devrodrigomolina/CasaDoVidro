@@ -1,7 +1,7 @@
 <template>
   <div class="container-header-principal">
     <div class="logo">
-      <img src="../assets/images/logo.jpg" alt="">
+      <a href=""><img src="../assets/images/logo.png" alt="" /></a>
     </div>
     <div class="redes-sociais">
       <i class="fa-brands fa-2x fa-instagram"></i>
@@ -9,20 +9,18 @@
     </div>
     <nav>
       <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Sobre</a></li>
-        <li><a href="">Serviços</a></li>
-        <li><a href="">Contato</a></li>
-        <li><a href="">Contato</a></li>
+        <li><a class="menu-itens" href="">Inicio</a></li>
+        <li><a class="menu-itens" href="">Sobre</a></li>
+        <li><a class="menu-itens" href="">Serviços</a></li>
+        <li><a class="menu-itens" href="">Contato</a></li>
+        <li><a class="menu-itens" href="">Contato</a></li>
       </ul>
     </nav>
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
@@ -32,12 +30,12 @@ export default {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 80px;
+  height: 90px;
   margin: 0 auto;
 }
 .logo {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 .logo img {
   height: 100%;
@@ -57,7 +55,7 @@ export default {
   border-radius: 8px;
   font-size: 22px;
   font-weight: 500;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .redes-sociais i:hover {
   background: #309ac7;
@@ -65,25 +63,45 @@ export default {
 }
 nav {
   width: 500px;
-  font-weight: 500;
 }
 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  border: 1px solid red;
 }
 
-a {
+.menu-itens {
   color: #0b0e11;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 1.1rem;
-  transition: ease .3s;
- 
+  letter-spacing: 1px;
+  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
-a:hover{
-   background-color: #309ac7;
-  color: #ffffff;
-  padding: 24px 10px;
+
+.menu-itens:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.menu-itens:hover {
+  background-position: 0;
+}
+
+.menu-itens:hover::before {
+  width: 100%;
 }
 </style>

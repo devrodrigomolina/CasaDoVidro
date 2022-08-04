@@ -2,6 +2,7 @@
   <div class="container">
     <HeaderContatos />
     <HeaderPrincipal />
+    <Carrossel />
     <Nuxt />
   </div>
 </template>
