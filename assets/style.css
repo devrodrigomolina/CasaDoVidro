@@ -5,6 +5,7 @@
 }
 body {
   font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
 }
 ul, li, a {
   list-style: none;

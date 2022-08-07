@@ -1,21 +1,20 @@
 <template>
   <div class="container-carrossel">
-    <div class="arrows">
-      <span @click="backCarrossel" class="arrow-left">&#8678;</span>
-      <span class="arrow-rigth">&#8680;</span>
-    </div>
-    <div class="overlay"></div>
-
-    <div class="a">
+    <div class="carrossel-inner">
+      <div class="overlay">
+        <div class="infos">
+          <h1>Modernidade</h1>
+          <span>E Sofisticação</span>
+        </div>
+      </div>
       <CarrosselItens
         v-for="(img, index) in images"
-        :key="img"
+        :key="`item-${index}`"
         :slide="img"
         :imageIndex="settings.imageIndex"
         :index="index"
       />
     </div>
-
   </div>
 </template>
 
@@ -39,13 +38,6 @@ export default {
     };
   },
   methods: {
-    backCarrossel() {
-      if (this.settings.imageIndex >= this.images.length - 1) {
-        this.settings.imageIndex = 0;
-      } else {
-        this.settings.imageIndex++;
-      }
-    },
     setImageIndex(index) {
       this.settings.imageIndex = index;
     },
@@ -53,9 +45,12 @@ export default {
 
   mounted() {
     this.settings.autoplaySpeed = setInterval(() => {
-      const index = this.settings.imageIndex < this.images.length - 1 ? this.settings.imageIndex + 1 : 0;
+      const index =
+        this.settings.imageIndex < this.images.length - 1
+          ? this.settings.imageIndex + 1
+          : 0;
       this.setImageIndex(index);
-    }, 5000);
+    }, 6000);
   },
   beforeUnmount() {
     clearInterval(this.settings.autoplaySpeed);
@@ -63,39 +58,40 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .container-carrossel {
+  display: flex;
+  justify-content: center;
+}
+.carrossel-inner {
+  position: relative;
   width: 100vw;
   height: 500px;
-  position: absolute;
-  overflow: hidden;
-}
-.a { 
-  display: flex;
   overflow: hidden;
 }
 
-.arrows {
-  width: 100vw;
-  height: 500px;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
-  align-items: center;
-  position: absolute;
-}
-.arrow-left,
-.arrow-rigth {
-  font-size: 3rem;
-  color: white;
-  z-index: 12;
-}
 .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 500px;
   z-index: 4;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.infos {
+  text-align: center;
+}
+.infos h1 {
+  color: white;
+  font-size: 5rem;
+}
+
+.infos span { 
+  font-weight: bold;
+  font-size: 3rem;
+  color: #309ac7;
 }
 </style>
