@@ -38,6 +38,20 @@
     <div class="btn-container">
       <button class="btn">Saiba Mais</button>
     </div>
+    <div class="cards">
+      <div class="card-1">
+        <img class="img-card" src="@/assets/images/shield.png" alt="">
+        <h3 class="text-card">3 Anos de garantia de serviço</h3>
+      </div>
+      <div class="card-2">
+        <img class="img-card" src="@/assets/images/shield-1.png" alt="">
+        <h3 class="text-card">5 Anos de garantia da fabrica</h3>
+      </div>
+      <div class="card-3">
+        <img class="img-card" src="@/assets/images/credit-card.png" alt="">
+        <h3 class="text-card">Pagamento em até 12x sem juros</h3>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -93,5 +107,44 @@ export default {};
   border: none;
   text-align: center;
   font-weight: bold;
+  transition: all .3s;
+  cursor: pointer;
 }
+.btn:hover {
+  background: #186383;
+  transform: translateY(-10px);
+}
+
+.cards {
+  width: 100vw;
+  max-width: 1300px;
+  margin: 130px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-card {
+  width: 80px;
+  height: 80px;
+  margin: 25px 0;
+}
+.card-1,.card-2,.card-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  height: 230px;
+  background: #186383;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow:0px 0px 0px 5px rgb(255, 255, 255) inset;
+  transition: all .3s;
+} 
+.text-card {
+  color: rgba(255, 255, 255, 0.884);
+}
+.card-1:hover,.card-2:hover,.card-3:hover {
+  transform: translateY(-10px);
+} 
 </style>
