@@ -2,8 +2,6 @@
   <div class="container">
     <HeaderContatos />
     <HeaderPrincipal />
-    <Carrossel />
-    <Sobre />
     <Nuxt />
   </div>
 </template>
