@@ -1,5 +1,5 @@
 <template>
-  <transition :appear="true" name="slide-in">
+  <transition name="slide-in">
     <div
       class="carrossel-itens"
       v-show="imageIndex === index"
@@ -31,7 +31,7 @@ export default {
 
 .slide-in-enter-active,
 .slide-in-leave-active {
-  transition: all 2s ease;
+  transition: all 2s ease-in-out;
 }
 .slide-in-enter {
   opacity: 0;
