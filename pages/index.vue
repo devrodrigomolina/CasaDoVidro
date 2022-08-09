@@ -3,6 +3,7 @@
     <Carrossel />
     <Sobre />
     <NossosServicos />
+    <Beneficios />
   </div>
 </template>
 
