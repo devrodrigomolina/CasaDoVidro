@@ -1,7 +1,7 @@
 <template>
   <div class="container-header-principal">
     <div class="logo">
-      <a href=""><img src="../assets/images/logo.png" alt="" /></a>
+      <nuxt-link to="/"><img src="../assets/images/logo.png" alt="" /></nuxt-link>
     </div>
     <div class="redes-sociais">
       <i class="fa-brands fa-2x fa-instagram"></i>
@@ -9,11 +9,11 @@
     </div>
     <nav>
       <ul>
-        <li><a class="menu-itens" href="">Inicio</a></li>
-        <li><a class="menu-itens" href="">Sobre</a></li>
-        <li><a class="menu-itens" href="">Serviços</a></li>
-        <li><a class="menu-itens" href="">Contato</a></li>
-        <li><a class="menu-itens" href="">Contato</a></li>
+        <li><nuxt-link class="menu-itens" to="/">Inicio</nuxt-link></li>
+        <li><nuxt-link class="menu-itens" to="/sobre">Sobre</nuxt-link></li>
+        <li><nuxt-link class="menu-itens" to="/servicos">Serviços</nuxt-link></li>
+        <li><nuxt-link class="menu-itens" to="/contato">Contato</nuxt-link></li>
+        <li><nuxt-link class="menu-itens" to="/time">Nosso Time</nuxt-link></li>
       </ul>
     </nav>
   </div>
