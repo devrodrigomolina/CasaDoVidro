@@ -7,66 +7,28 @@
     <div class="conteudo-sobre">
       <div class="text-sobre">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          maiores dolore, explicabo magnam voluptas delectus rem in, tempore
-          neque accusamus reiciendis? Officia, laudantium quam. A, similique?
-          Sunt saepe minus eligendi.
+          Fundada em 1996, é pioneira em soluções de vidros e espelhos para marcenarias na região de Maringá, interior do Paraná, tornando-se desde cedo, uma empresa de qualidade ímpar e totalmente inovadora, capaz de suprir todas as necessidades de seus clientes em diversas áreas que atuam com envidraçamento, seja para fim arquitetônico ou decorativo.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          maiores dolore, explicabo magnam voluptas delectus rem in, tempore
-          neque accusamus reiciendis? Officia, laudantium quam. A, similique?
-          Sunt saepe minus eligendi.
+         Empresa consolidada no ramo, realizando o sonho de seus clientes há mais de 26 anos e operando apenas com maquinário de última geração, resultando em um serviço de acabamento impecável. Tudo isso sem deixar de lado a preocupação com o meio-ambiente, contando com um sistema de abastecimento pluvial que colabora de forma positiva á economia da água necessária ao processo industrial.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          maiores dolore, explicabo magnam voluptas delectus rem in, tempore
-          neque accusamus reiciendis? Officia, laudantium quam. A, similique?
-          Sunt saepe minus eligendi.
+          Atendimento especializado para lojas de decoração, painéis espelhados, vidros pintados, comumente utilizados no acabamento de móveis decorativos. Venha conhecer a Casa do vidro!
         </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          maiores dolore, explicabo magnam voluptas delectus rem in, tempore
-          neque accusamus reiciendis? Officia, laudantium quam. A, similique?
-          Sunt saepe minus eligendi.
-        </p>
+
       </div>
       <div class="image-sobre">
         <img src="@/assets/images/loja.jpg" alt="" />
       </div>
     </div>
-    <div class="btn-container">
-      <button class="btn">Saiba Mais</button>
-    </div>
-    <div class="cards" >
-      <div class="card" v-for="card in imgCard" :key="card">
-        <img class="img-card" :src="card.img" alt="">
-        <h3 class="text-card">{{ card.text }}</h3>
-      </div>
-    </div>
+    <Button />
+    <CardsSobre />
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      imgCard: [
-        {
-          img: require('@/assets/images/shield.png'),
-          text: '3 Anos de garantia de serviço'
-        },
-        {
-          img: require('@/assets/images/shield-1.png'),
-          text: '5 Anos de garantia da fabrica'
-        },
-        {
-          img: require('@/assets/images/credit-card.png'),
-          text: 'Pagamento em até 12x sem juros'
-        },
-      ]
-    }
-  }
+
 };
 </script>
 
@@ -76,6 +38,7 @@ export default {
   font-weight: bold;
   margin: 60px 0;
 }
+
 .titulo h1 {
   font-size: 3.8rem;
   color: #309ac7;
@@ -83,8 +46,16 @@ export default {
 .titulo h2 {
   margin-left: 180px;
   font-size: 1.6rem;
+  position: relative;
 }
-
+.titulo h2::before {
+  content: '';
+  width: 140px;
+  height: 3px;
+  background: #309ac7;
+  position: absolute;
+  bottom: -20px;
+}
 .conteudo-sobre {
   display: flex;
   justify-content: center;
