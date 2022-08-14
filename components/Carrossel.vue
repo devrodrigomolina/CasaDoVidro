@@ -3,8 +3,8 @@
     <div class="carrossel-inner">
       <div class="overlay">
         <div class="infos">
-          <h1>Modernidade</h1>
-          <span>E Sofisticação</span>
+          <h1>MODERNIDADE</h1>
+          <span>E SOFISTICAÇÃO</span>
         </div>
       </div>
       <CarrosselItens
@@ -78,7 +78,7 @@ export default {
   height: 500px;
   z-index: 4;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.596);
 }
 
 .infos {
@@ -87,11 +87,13 @@ export default {
 .infos h1 {
   color: white;
   font-size: 5rem;
+  letter-spacing: 0.5rem;
 }
 
 .infos span { 
   font-weight: bold;
   font-size: 3rem;
   color: #309ac7;
+  letter-spacing: 0.5rem;
 }
 </style>
