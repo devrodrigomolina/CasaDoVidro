@@ -26,11 +26,11 @@ export default {
           text: 'Proporciona Isolamento Acústico'
         },
         {
-          img: require("@/assets/images/diamond.png"),
+          img: require("@/assets/images/power.png"),
           text: 'Economize Energia com Iluminação Natural'
         },
         {
-          img: require("@/assets/images/power.png"),
+          img: require("@/assets/images/diamond.png"),
           text: 'Valoriza a estética de seu ambiente'
         },
         {
