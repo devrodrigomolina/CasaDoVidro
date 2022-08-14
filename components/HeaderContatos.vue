@@ -2,21 +2,20 @@
   <div class="container-header">
     <div class="header-contatos">
       <div class="infos-contatos">
-  
         <p class="contatos-infos" >
-          <fa class="icones" icon="phone-flip" /> <a href="">(44) 3253-9999</a>
+          <fa class="icones" icon="phone-flip" /> <nuxt-link to="/">(44) 3253-9999</nuxt-link>
         </p>
        
         <p class="contatos-infos">
-          <fa class="icones" :icon="['fab', 'whatsapp']" /> <a href="">(44) 99999-9999</a>
+          <fa class="icones" :icon="['fab', 'whatsapp']" /> <nuxt-link to="">(44) 99999-9999</nuxt-link>
         </p>
         <p class="contatos-infos">
           <fa class="icones" icon="clock" /> Seg - Sex: 8:00 - 18:00
         </p>
       </div>
 
-      <div class="container-btn">
-        <button class="btn">Solicite um orçamento</button>
+      <div class="container-btn-contatos">
+        <button class="btn-contatos">Solicite um orçamento</button>
       </div>
     </div>
   </div>
@@ -53,10 +52,10 @@ export default {
   font-weight: 600;
   color: white;
 }
-.container-btn {
+.container-btn-contatos {
   height: 100%;
 }
-.btn {
+.btn-contatos {
   width: 400px;
   height: 100%;
   background: #309ac7;

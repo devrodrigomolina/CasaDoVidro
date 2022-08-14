@@ -22,9 +22,7 @@
               velit temporibus harum esse blanditiis magni neque assumenda omnis
               ex placeat. Ab temporibus ducimus necessitatibus!
             </p>
-            <div class="btn-container">
-              <button class="btn">Saiba Mais</button>
-            </div>
+            <Button />
           </div>
           <img src="@/assets/images/box.jpg" alt="" />
         </div>
@@ -46,9 +44,7 @@
               recusandae quidem illum voluptate officiis pariatur, omnis minima
               praesentium vitae iure. Eaque voluptates labore sint amet.
             </p>
-            <div class="btn-container">
-              <button class="btn">Saiba Mais</button>
-            </div>
+            <Button />
           </div>
         </div>
       </div>
@@ -65,9 +61,7 @@
               magni harum minus nulla molestias quibusdam veritatis corporis
               excepturi architecto non dolore nisi ratione expedita.
             </p>
-            <div class="btn-container">
-              <button class="btn">Saiba Mais</button>
-            </div>
+            <Button />
           </div>
           <img src="@/assets/images/espelho.jpg" alt="" />
         </div>
@@ -90,6 +84,8 @@ export default {};
   font-weight: bold;
   padding-top: 60px;
 }
+
+
 .titulo-servicos h1 {
   font-size: 4.6rem;
   color: #309ac7;
@@ -98,8 +94,16 @@ export default {};
   margin-left: 280px;
   font-size: 3rem;
   color: white;
+  position: relative;
 }
-
+.titulo-servicos h2::before {
+  content: '';
+  width: 140px;
+  height: 3px;
+  background: #309ac7;
+  position: absolute;
+  bottom: -20px;
+}
 .servicos-itens {
   width: 100vw;
   max-width: 1200px;
@@ -113,6 +117,7 @@ export default {};
 }
 .servicos-itens .item img {
   width: 500px;
+  height: 500px;
   margin-bottom: 40px;
   border: 5px solid white;
 }
@@ -123,5 +128,17 @@ export default {};
 }
 .info h2 {
   font-size: 2.8rem;
+  position: relative;
+  margin: 20px 0;
+}
+
+.info h2::before {
+  content: '';
+  width: 140px;
+  height: 3px;
+  background: #309ac7;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: -10px;
 }
 </style>
