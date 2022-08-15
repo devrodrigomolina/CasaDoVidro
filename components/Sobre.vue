@@ -1,5 +1,5 @@
 <template>
-  <div class="container-sobre">
+  <div id="sobre" class="container-sobre">
     <div class="titulo">
       <h1>SOBRE</h1>
       <h2>A CASA DO VIDRO</h2>

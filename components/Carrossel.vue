@@ -62,6 +62,7 @@ export default {
 .container-carrossel {
   display: flex;
   justify-content: center;
+
 }
 .carrossel-inner {
   position: relative;

@@ -1,8 +1,12 @@
 <template>
   <div class="container">
-    <HeaderContatos />
-    <HeaderPrincipal />
-    <Nuxt />
+    <div class="header">
+      <HeaderContatos />
+      <HeaderPrincipal />
+    </div>
+    <div class="conteudo">
+      <Nuxt />
+    </div>
     <Footer />
   </div>
 </template>
@@ -11,4 +15,15 @@
 export default {};
 </script>
 
-<style scoped></style>
+<style scoped>
+.conteudo {
+  padding-top: 140px;
+}
+.header {
+  position: fixed;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.507);
+  border-bottom: 1px solid black;
+
+}
+</style>

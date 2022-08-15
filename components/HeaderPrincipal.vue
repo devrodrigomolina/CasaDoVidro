@@ -10,8 +10,8 @@
     <nav>
       <ul>
         <li><nuxt-link class="menu-itens" to="/">Inicio</nuxt-link></li>
-        <li><nuxt-link class="menu-itens" to="/sobre">Sobre</nuxt-link></li>
-        <li><nuxt-link class="menu-itens" to="/servicos">Serviços</nuxt-link></li>
+        <li><nuxt-link class="menu-itens" href="#sobre" to="#sobre">Sobre</nuxt-link></li>
+        <li><nuxt-link class="menu-itens" to="#servicos">Serviços</nuxt-link></li>
         <li><nuxt-link class="menu-itens" to="/contato">Contato</nuxt-link></li>
         <li><nuxt-link class="menu-itens" to="/time">Nosso Time</nuxt-link></li>
       </ul>
@@ -20,7 +20,9 @@
 </template>
 
 <script>
-export default {};
+
+export default {
+};
 </script>
 
 <style scoped>
