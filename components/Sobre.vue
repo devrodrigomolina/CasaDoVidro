@@ -70,9 +70,11 @@ export default {
   text-align: justify;
   margin-bottom: 25px;
 }
-.image-sobre img {
+.image-sobre {
   width: 700px;
-  height: 400px;
+}
+.image-sobre img {
+  width: 100%;
 }
 
 </style>

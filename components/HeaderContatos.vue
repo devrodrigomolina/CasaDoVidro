@@ -37,7 +37,7 @@ export default {
   color: #309ac7;
 }
 .header-contatos {
-  width: 1200px;
+  max-width: 1200px;
   height: 100%;
   display: flex;
   align-items: center;

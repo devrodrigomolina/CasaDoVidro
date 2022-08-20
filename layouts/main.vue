@@ -22,7 +22,7 @@ export default {};
 .header {
   position: fixed;
   z-index: 999;
-  background: rgba(255, 255, 255, 0.507);
+  background: rgb(255, 255, 255);
   border-bottom: 1px solid black;
 
 }
