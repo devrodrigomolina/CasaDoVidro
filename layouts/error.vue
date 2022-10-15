@@ -1,5 +1,5 @@
 <template>
-  <h1>DEU ERRO SAPORRAA</h1>
+  <h1>DEU ERRO</h1>
 </template>
 
 <script>
